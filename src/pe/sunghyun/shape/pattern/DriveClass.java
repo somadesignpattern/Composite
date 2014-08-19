@@ -2,22 +2,23 @@ package pe.sunghyun.shape.pattern;
 
 import pe.sunghyun.shape.common.Circle;
 import pe.sunghyun.shape.common.Rectangle;
+import pe.sunghyun.shape.common.Shape;
 
 public class DriveClass {
 
 	public static void main(String[] args) {
-		Circle circle_1 = new Circle(3);
-		Circle circle_2 = new Circle(5);
-		Circle circle_3 = new Circle(10);
-		Circle circle_4 = new Circle(7);
+		Shape circle_1 = new Circle(3);
+		Shape circle_2 = new Circle(5);
+		Shape circle_3 = new Circle(10);
+		Shape circle_4 = new Circle(7);
 
-		Rectangle rectangle_1 = new Rectangle(4, 5);
-		Rectangle rectangle_2 = new Rectangle(2, 3);
-		Rectangle rectangle_3 = new Rectangle(7, 8);
+		Shape rectangle_1 = new Rectangle(4, 5);
+		Shape rectangle_2 = new Rectangle(2, 3);
+		Shape rectangle_3 = new Rectangle(7, 8);
 
-		CompositeShape shape_1 = new CompositeShape();
-		CompositeShape shape_2 = new CompositeShape();
-		CompositeShape shape_3 = new CompositeShape();
+		Shape shape_1 = new CompositeShape();
+		Shape shape_2 = new CompositeShape();
+		Shape shape_3 = new CompositeShape();
 
 		shape_1.add(circle_1);
 		shape_1.add(rectangle_1);

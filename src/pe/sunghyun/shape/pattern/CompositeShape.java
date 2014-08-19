@@ -16,12 +16,19 @@ public class CompositeShape implements Shape {
 		}
 	}
 
+	@Override
 	public void add(Shape shape) {
 		this.mChildShapes.add(shape);
 	}
 
+	@Override
 	public void remove(Shape shape) {
 		this.mChildShapes.remove(shape);
+	}
+
+	@Override
+	public Shape getChild(int i) {
+		return this.mChildShapes.get(i);
 	}
 
 }

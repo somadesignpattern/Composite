@@ -20,4 +20,19 @@ public class Circle implements Shape {
 	public void print() {
 		System.out.println("Circle: " + 2 * this.mRadius + "dm in px");
 	}
+
+	@Override
+	public void add(Shape o) {
+		throw new UnsupportedOperationException();
+	}
+
+	@Override
+	public void remove(Shape o) {
+		throw new UnsupportedOperationException();
+	}
+
+	@Override
+	public Shape getChild(int i) {
+		throw new UnsupportedOperationException();
+	}
 }

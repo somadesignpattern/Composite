@@ -29,4 +29,19 @@ public class Rectangle implements Shape {
 	public void print() {
 		System.out.println("Rectangle: " + this.mWidth + "px, " + this.mHeight + "px");
 	}
+
+	@Override
+	public void add(Shape o) {
+		throw new UnsupportedOperationException();
+	}
+
+	@Override
+	public void remove(Shape o) {
+		throw new UnsupportedOperationException();
+	}
+
+	@Override
+	public Shape getChild(int i) {
+		throw new UnsupportedOperationException();
+	}
 }
